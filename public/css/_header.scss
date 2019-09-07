@@ -1,10 +1,47 @@
 header {
-  background-size: cover;
-  background-position: center;
-  height: 500px;
+  background-color: $skyColor;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 125%;
+  height: 100%;
   @include breakpoint($ipad) {
     background-size: cover;
-    height: 500px;
+    height: 100%;
     width: 100%;
+  }
+  .mainTitle {
+    max-width: 440px;
+    margin: 60px auto 40px;
+  }
+  .fortuneWheel {
+    #pointer{
+      cursor: pointer;
+    }
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .mySumPoints {
+    padding: 30px 190px 30px 0;
+    margin-bottom: -60px;
+    text-align: right;
+  }
+  .ruleBoard {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 650px;
+    margin: 30px auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    ol {
+      margin-top: 30px;
+      li {
+        color: #fff;
+        list-style: decimal;
+        line-height: 2;
+      }
+    }
   }
 }
